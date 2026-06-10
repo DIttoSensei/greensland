@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greensland - Agronomic Crop Matrix</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white font-sans text-stone-900 antialiased">
+
+    <nav class="sticky top-0 z-50 border-b border-stone-200 bg-white/90 backdrop-blur-md">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-20 justify-between items-center">
+                <div class="flex items-center gap-8">
+                    <div class="flex items-center gap-2">
+                        <svg class="h-6 w-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v16h16M4 20l7-7 4 4 5-5"/>
+                        </svg>
+                        <span class="text-lg font-bold tracking-wider uppercase text-stone-900">Greens<span class="text-green-700">land</span></span>
+                    </div>
+                    <div class="hidden lg:flex items-center gap-6 text-xs font-semibold tracking-wider uppercase text-stone-600">
+                        <a href="index.html" class="hover:text-stone-900 transition-colors px-1 py-7">Platform Core</a>
+                        <a href="calendar.html" class="text-green-700 border-b-2 border-green-700 px-1 py-7">Crop Calendars</a>
+                        <a href="weather.html" class="hover:text-stone-900 transition-colors px-1 py-7">Meteorological Alerts</a>
+                        <a href="market.html" class="hover:text-stone-900 transition-colors px-1 py-7">Market Analytics</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-stone-50 border-b border-stone-200 py-12">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <span class="text-xs font-bold tracking-widest uppercase text-green-700">Dynamic Scheduler</span>
+            <h1 class="text-3xl font-light text-stone-900 mt-2">12-Month Agronomic Cultivation Matrix</h1>
+            <p class="text-stone-600 text-sm max-w-xl mt-1">Select a operational month layer to view optimal sowing metrics and soil requirement variables.</p>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+            
+            <div class="lg:col-span-4 bg-stone-50 p-6 rounded border border-stone-200">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-stone-500 mb-4">Select Target Month</h3>
+                <div class="grid grid-cols-2 gap-2" id="month-buttons-container">
+                    </div>
+            </div>
+
+            <div class="lg:col-span-8 space-y-6">
+                <div class="flex justify-between items-center border-b border-stone-200 pb-4">
+                    <h2 class="text-xl font-bold tracking-tight" id="active-month-heading">Active View: June</h2>
+                    <span class="text-xs text-stone-500 font-mono" id="crop-count-indicator">4 Cultivation Targets Identified</span>
+                </div>
+
+                <div class="grid gap-4 sm:grid-cols-2" id="crop-grid-container">
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Production Grade Simulated Data Architecture
+        const cropDataset = [
+            { name: "Maize", types: "Cereal Grain", optimalMonths: ["March", "April", "May", "June"], spacing: "75cm x 25cm", depth: "5cm", ph: "5.8 - 7.0", waterNeeded: "Moderate" },
+            { name: "Cassava", types: "Root Tuber", optimalMonths: ["April", "May", "June", "September"], spacing: "1m x 1m", depth: "15cm", ph: "5.5 - 6.5", waterNeeded: "Low / Drought Resistant" },
+            { name: "Yam", types: "Root Tuber", optimalMonths: ["February", "March", "April"], spacing: "1m x 1m", depth: "20cm", ph: "5.5 - 6.2", waterNeeded: "High (Early Phase)" },
+            { name: "Cowpea", types: "Legume", optimalMonths: ["June", "July", "August", "September"], spacing: "50cm x 20cm", depth: "3cm", ph: "6.0 - 7.0", waterNeeded: "Low" },
+            { name: "Rice", types: "Cereal Grain", optimalMonths: ["May", "June", "July"], spacing: "20cm x 20cm", depth: "2cm", ph: "5.0 - 6.5", waterNeeded: "Critical / High" },
+            { name: "Pepper", types: "Horticultural Veg", optimalMonths: ["January", "February", "April", "May", "June"], spacing: "50cm x 50cm", depth: "1cm", ph: "6.0 - 6.8", waterNeeded: "Moderate" }
+        ];
+
+        const monthsArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        let selectedMonth = "June";
+
+        function renderInterface() {
+            // Render Sidebar Buttons
+            const btnContainer = document.getElementById("month-buttons-container");
+            btnContainer.innerHTML = monthsArray.map(m => `
+                <button onclick="setActiveMonth('${m}')" class="text-left text-xs font-semibold px-4 py-3 rounded border transition-all ${m === selectedMonth ? 'bg-green-700 text-white border-green-700 shadow-xs' : 'bg-white text-stone-700 border-stone-200 hover:bg-stone-100'}">
+                    ${m}
+                </button>
+            `).join('');
+
+            // Render Crop Grid Items Filtered by Active Month State Variable
+            const gridContainer = document.getElementById("crop-grid-container");
+            const filteredData = cropDataset.filter(crop => crop.optimalMonths.includes(selectedMonth));
+            
+            document.getElementById("active-month-heading").innerText = `Active View: ${selectedMonth}`;
+            document.getElementById("crop-count-indicator").innerText = `${filteredData.length} Cultivation Targets Identified`;
+
+            if(filteredData.length === 0) {
+                gridContainer.innerHTML = `<div class="col-span-2 text-stone-400 text-xs py-12 text-center border border-dashed border-stone-200 rounded">No primary sowing targets flagged for this specific operational sequence.</div>`;
+                return;
+            }
+
+            gridContainer.innerHTML = filteredData.map(crop => `
+                <div class="border border-stone-200 rounded bg-white p-6 space-y-4 shadow-2xs hover:border-stone-400 transition-all">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="text-base font-bold text-stone-900">${crop.name}</h4>
+                            <span class="text-2xs font-mono text-stone-400 uppercase tracking-wider">${crop.types}</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-2 border-t border-stone-100 text-2xs font-mono">
+                        <div class="bg-stone-50 p-2 rounded"><span class="block text-stone-400">Spacing</span><span class="font-bold text-stone-800">${crop.spacing}</span></div>
+                        <div class="bg-stone-50 p-2 rounded"><span class="block text-stone-400">Sowing Depth</span><span class="font-bold text-stone-800">${crop.depth}</span></div>
+                        <div class="bg-stone-50 p-2 rounded"><span class="block text-stone-400">Optimal Soil pH</span><span class="font-bold text-stone-800">${crop.ph}</span></div>
+                        <div class="bg-stone-50 p-2 rounded"><span class="block text-stone-400">Moisture Profile</span><span class="font-bold text-green-700">${crop.waterNeeded}</span></div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function setActiveMonth(monthName) {
+            selectedMonth = monthName;
+            renderInterface();
+        }
+
+        // Initialize state execution on DOM loading cycle
+        document.addEventListener("DOMContentLoaded", renderInterface);
+    </script>
+</body>
+</html>

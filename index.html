@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greensland - Professional Agricultural Intelligence Platform</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* Custom non-intrusive professional animation states */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-white font-sans text-stone-900 antialiased selection:bg-green-100">
+
+    <div class="bg-stone-900 px-4 py-2 text-xs font-medium text-stone-300 sm:px-6 lg:px-8 border-b border-stone-800">
+        <div class="mx-auto max-w-7xl flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5">
+                    <span class="h-1.5 w-1.5 rounded-full bg-green-500"></span>
+                    System Status: Operational
+                </span>
+                <span class="hidden md:inline text-stone-500">|</span>
+                <span class="hidden md:inline text-stone-400">Data Feed Update: June 2026</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="weather.html" class="hover:text-white transition-colors">Emergency Weather Broadcasts</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sticky top-0 z-50 border-b border-stone-200 bg-white/90 backdrop-blur-md">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-20 justify-between items-center">
+                <div class="flex items-center gap-8">
+                    <div class="flex items-center gap-2">
+                        <svg class="h-6 w-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v16h16M4 20l7-7 4 4 5-5"/>
+                        </svg>
+                        <span class="text-lg font-bold tracking-wider uppercase text-stone-900">Greens<span class="text-green-700">land</span></span>
+                    </div>
+                    <div class="hidden lg:flex items-center gap-6 text-xs font-semibold tracking-wider uppercase text-stone-600">
+                        <a href="index.html" class="text-green-700 border-b-2 border-green-700 px-1 py-7">Platform Core</a>
+                        <a href="calendar.html" class="hover:text-stone-900 transition-colors px-1 py-7">Crop Calendars</a>
+                        <a href="weather.html" class="hover:text-stone-900 transition-colors px-1 py-7">Meteorological Alerts</a>
+                        <a href="market.html" class="hover:text-stone-900 transition-colors px-1 py-7">Market Analytics</a>
+                    </div>
+                </div>
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="calendar.html" class="text-xs font-bold tracking-wider uppercase border border-stone-300 px-4 py-2.5 rounded hover:bg-stone-50 transition">
+                        Access Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-stone-50 border-b border-stone-200 py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="text-xs font-bold tracking-widest uppercase text-green-700">Agronomic Decision Matrix</div>
+                    <h1 class="text-4xl font-light tracking-tight text-stone-900 sm:text-5xl lg:text-6xl leading-tight">
+                        Empirical data architecture powering <span class="font-semibold text-green-800">regional agricultural yields.</span>
+                    </h1>
+                    <p class="text-base text-stone-600 leading-relaxed max-w-xl">
+                        An integrated, real-time frontend utility designed for agricultural producers. Synthesizing predictive cropping timelines, dynamic localized macro-weather telemetry, and macro-wholesale pricing indices into a singular command interface.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="calendar.html" class="bg-green-700 hover:bg-green-800 text-white text-xs font-bold tracking-wider uppercase px-6 py-3.5 rounded shadow-sm transition">
+                            Initialize Crop Calendar
+                        </a>
+                        <a href="market.html" class="bg-white border border-stone-300 text-stone-700 text-xs font-bold tracking-wider uppercase px-6 py-3.5 rounded hover:bg-stone-50 transition">
+                            Review Wholesale Index
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 bg-white border border-stone-200 p-6 rounded shadow-sm space-y-4">
+                    <div class="flex justify-between items-center border-b border-stone-100 pb-3">
+                        <span class="text-xs font-bold uppercase tracking-wider text-stone-500">Live Telemetry Terminal</span>
+                        <span class="inline-flex items-center gap-1.5 rounded bg-green-50 px-2 py-0.5 text-2xs font-medium text-green-700 border border-green-200">Active Feed</span>
+                    </div>
+                    <div class="space-y-3 text-xs">
+                        <div class="p-2.5 bg-stone-50 rounded border border-stone-100 flex justify-between">
+                            <span class="text-stone-500">Regional Optimization Matrix</span>
+                            <span class="font-mono font-semibold text-stone-900">Zone-A / Sub-Saharan</span>
+                        </div>
+                        <div class="p-2.5 bg-stone-50 rounded border border-stone-100 flex justify-between">
+                            <span class="text-stone-500">Current Planting Phase</span>
+                            <span class="font-mono font-semibold text-green-700">June Cycle [Root/Cereal]</span>
+                        </div>
+                        <div class="p-2.5 bg-stone-50 rounded border border-stone-100 flex justify-between">
+                            <span class="text-stone-500">Critical Weather Anomaly</span>
+                            <span class="font-mono font-semibold text-amber-600">Precipitation Spike +18%</span>
+                        </div>
+                        <div class="p-2.5 bg-stone-50 rounded border border-stone-100 flex justify-between">
+                            <span class="text-stone-500">Market Price Liquidity Index</span>
+                            <span class="font-mono font-semibold text-stone-900">Stable / High Volume</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 border-b border-stone-200">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl space-y-4 mb-16">
+                <span class="text-xs font-bold tracking-widest uppercase text-green-700">Core Architecture Components</span>
+                <h2 class="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">Engineered solutions for decentralized agricultural risk management.</h2>
+                <p class="text-stone-600 text-sm leading-relaxed">
+                    Our platform acts as an operating framework providing farmers with granular visibility into seasonal workflows, mitigating macro-environmental volatility through software intervention.
+                </p>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="reveal-on-scroll border border-stone-200 p-8 rounded bg-white hover:border-stone-400 transition-colors space-y-4">
+                    <div class="h-10 w-10 rounded bg-green-50 flex items-center justify-center text-green-700 border border-green-100">
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold tracking-tight text-stone-900">Predictive Crop Scheduling</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed">
+                        A centralized matrix detailing continuous optimal planting, nourishment, and harvesting windows across a structured 12-month calendar module. Tracks modern localized variations rather than historic weather assumptions.
+                    </p>
+                </div>
+
+                <div class="reveal-on-scroll border border-stone-200 p-8 rounded bg-white hover:border-stone-400 transition-colors space-y-4">
+                    <div class="h-10 w-10 rounded bg-amber-50 flex items-center justify-center text-amber-700 border border-amber-100">
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold tracking-tight text-stone-900">Real-Time Weather Mitigation</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed">
+                        Continuous assessment of macro climate data sets. Generates deterministic threshold alerts regarding severe moisture variances, soil-temperature drops, and excessive precipitation risks directly to the operational dashboard.
+                    </p>
+                </div>
+
+                <div class="reveal-on-scroll border border-stone-200 p-8 rounded bg-white hover:border-stone-400 transition-colors space-y-4">
+                    <div class="h-10 w-10 rounded bg-stone-100 flex items-center justify-center text-stone-700 border border-stone-200">
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h2a2 2 0 002-2zm12-5a2 2 0 00-2-2h-2a2 2 0 00-2 2v5a2 2 0 002 2h2a2 2 0 002-2v-5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold tracking-tight text-stone-900">Wholesale Market Arbitrage</h3>
+                    <p class="text-stone-600 text-xs leading-relaxed">
+                        Tracks real-time transactional pricing arrays of primary cash crops across critical logistical channels, providing farmers direct pipelines to major storehouses and structural wholesalers without intermediate friction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-stone-50 border-b border-stone-200">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl space-y-4 mb-16">
+                <span class="text-xs font-bold tracking-widest uppercase text-stone-500">Operational Methodology</span>
+                <h2 class="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">From raw external data layers to actionable on-field operations.</h2>
+            </div>
+
+            <div class="grid gap-8 lg:grid-cols-4 relative">
+                <div class="reveal-on-scroll relative bg-white border border-stone-200 p-6 rounded shadow-2xs space-y-3">
+                    <div class="text-xs font-mono font-bold text-green-700 bg-green-50 w-7 h-7 rounded-full flex items-center justify-center border border-green-200">01</div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-stone-900">Telemetry Ingestion</h4>
+                    <p class="text-stone-500 text-xs leading-relaxed">
+                        The interface targets theoretical regional APIs to extract meteorological trends, historical precipitation bands, and real-time wholesale pricing vectors.
+                    </p>
+                </div>
+                
+                <div class="reveal-on-scroll relative bg-white border border-stone-200 p-6 rounded shadow-2xs space-y-3">
+                    <div class="text-xs font-mono font-bold text-green-700 bg-green-50 w-7 h-7 rounded-full flex items-center justify-center border border-green-200">02</div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-stone-900">Algorithmic Filtering</h4>
+                    <p class="text-stone-500 text-xs leading-relaxed">
+                        Ingested data is mapped against specific crop biological profiles to calculate dynamic sowing degradation parameters based on modern soil variances.
+                    </p>
+                </div>
+
+                <div class="reveal-on-scroll relative bg-white border border-stone-200 p-6 rounded shadow-2xs space-y-3">
+                    <div class="text-xs font-mono font-bold text-green-700 bg-green-50 w-7 h-7 rounded-full flex items-center justify-center border border-green-200">03</div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-stone-900">Alert Propagation</h4>
+                    <p class="text-stone-500 text-xs leading-relaxed">
+                        If climatic threshold rules are breached (e.g., localized drought alerts), the layout changes state instantly, surfacing explicit risk-mitigation notifications.
+                    </p>
+                </div>
+
+                <div class="reveal-on-scroll relative bg-white border border-stone-200 p-6 rounded shadow-2xs space-y-3">
+                    <div class="text-xs font-mono font-bold text-green-700 bg-green-50 w-7 h-7 rounded-full flex items-center justify-center border border-green-200">04</div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-stone-900">B2B Logistical Link</h4>
+                    <p class="text-stone-500 text-xs leading-relaxed">
+                        Validated producers can instantly review active buying contracts from logistics networks and secure spatial storage allocations inside licensed regional storehouses.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="border border-stone-200 rounded p-8 lg:p-12 bg-stone-900 text-white shadow-sm">
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-center sm:text-left">
+                    <div class="space-y-1">
+                        <div class="text-3xl font-mono font-light tracking-tight text-green-400">12-Month</div>
+                        <div class="text-xs font-semibold tracking-wider uppercase text-stone-400">Algorithmic Calendar Depth</div>
+                    </div>
+                    <div class="space-y-1 border-t border-stone-800 pt-4 sm:border-t-0 sm:pt-0 sm:border-l sm:pl-6 border-stone-700">
+                        <div class="text-3xl font-mono font-light tracking-tight text-green-400">&lt; 3 Sec</div>
+                        <div class="text-xs font-semibold tracking-wider uppercase text-stone-400">Alert Propagation Latency</div>
+                    </div>
+                    <div class="space-y-1 border-t border-stone-800 pt-4 lg:border-t-0 lg:pt-0 lg:border-l lg:pl-6 border-stone-700">
+                        <div class="text-3xl font-mono font-light tracking-tight text-green-400">100%</div>
+                        <div class="text-xs font-semibold tracking-wider uppercase text-stone-400">Verified Wholesaler Network</div>
+                    </div>
+                    <div class="space-y-1 border-t border-stone-800 pt-4 lg:border-t-0 lg:pt-0 lg:border-l lg:pl-6 border-stone-700">
+                        <div class="text-3xl font-mono font-light tracking-tight text-green-400">99.9%</div>
+                        <div class="text-xs font-semibold tracking-wider uppercase text-stone-400">System Data Integrity</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-50 border-t border-stone-200 py-12 text-xs text-stone-500">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Greensland Infrastructure Platform. All data layers simulated for prototype validation.</p>
+            <div class="flex gap-6">
+                <a href="index.html" class="hover:text-stone-900 transition-colors">Core System</a>
+                <a href="calendar.html" class="hover:text-stone-900 transition-colors">Calendar Engine</a>
+                <a href="weather.html" class="hover:text-stone-900 transition-colors">Alert Framework</a>
+                <a href="market.html" class="hover:text-stone-900 transition-colors">Market Ledger</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Uses structural IntersectionObserver API to handle professional reveal animations as blocks step into viewport
+            const targetElements = document.querySelectorAll(".reveal-on-scroll");
+            
+            const layoutObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                        // Once visual transition states are triggered, remove element from tracking pool
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: null, // utilizes context viewport bounds
+                threshold: 0.1, // trigger execution when 10% of node surfaces
+                rootMargin: "0px 0px -50px 0px" // early baseline offset buffer
+            });
+
+            targetElements.forEach(element => {
+                layoutObserver.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
