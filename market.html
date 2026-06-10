@@ -11,21 +11,35 @@
     <nav class="sticky top-0 z-50 border-b border-stone-200 bg-white/90 backdrop-blur-md">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-20 justify-between items-center">
-                <div class="flex items-center gap-8">
-                    <div class="flex items-center gap-2">
-                        <svg class="h-6 w-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v16h16M4 20l7-7 4 4 5-5"/>
-                        </svg>
-                        <span class="text-lg font-bold tracking-wider uppercase text-stone-900">Greens<span class="text-green-700">land</span></span>
-                    </div>
-                    <div class="hidden lg:flex items-center gap-6 text-xs font-semibold tracking-wider uppercase text-stone-600">
-                        <a href="index.html" class="hover:text-stone-900 transition-colors px-1 py-7">Platform Core</a>
-                        <a href="calendar.html" class="hover:text-stone-900 transition-colors px-1 py-7">Crop Calendars</a>
-                        <a href="weather.html" class="hover:text-stone-900 transition-colors px-1 py-7">Meteorological Alerts</a>
-                        <a href="market.html" class="text-green-700 border-b-2 border-green-700 px-1 py-7">Market Analytics</a>
-                    </div>
+                <div class="flex items-center gap-2">
+                    <svg class="h-6 w-6 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v16h16M4 20l7-7 4 4 5-5"/>
+                    </svg>
+                    <span class="text-lg font-bold tracking-wider uppercase text-stone-900">Greens<span class="text-green-700">land</span></span>
                 </div>
+                <div class="hidden lg:flex items-center gap-6 text-xs font-semibold tracking-wider uppercase text-stone-600">
+                    <a href="index.html" class="hover:text-stone-900 transition-colors px-1 py-7">Platform Core</a>
+                    <a href="calendar.html" class="hover:text-stone-900 transition-colors px-1 py-7">Crop Calendars</a>
+                    <a href="weather.html" class="hover:text-stone-900 transition-colors px-1 py-7">Meteorological Alerts</a>
+                    <a href="market.html" class="text-green-700 border-b-2 border-green-700 px-1 py-7">Market Analytics</a>
+                </div>
+                <div class="hidden sm:flex lg:block items-center">
+                    <a href="calendar.html" class="text-xs font-bold tracking-wider uppercase border border-stone-300 px-4 py-2.5 rounded hover:bg-stone-50 transition">
+                        Access Dashboard
+                    </a>
+                </div>
+                <button id="menu-toggle-btn" class="lg:hidden p-2 text-stone-600 hover:text-stone-900 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path id="hamburger-icon-path" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
             </div>
+        </div>
+        <div id="mobile-menu-container" class="hidden lg:hidden border-b border-stone-200 bg-white px-4 pt-2 pb-6 space-y-1 shadow-md">
+            <a href="index.html" class="block rounded px-3 py-2.5 text-xs font-bold tracking-wider uppercase text-stone-600 hover:bg-stone-50 hover:text-stone-900">Platform Core</a>
+            <a href="calendar.html" class="block rounded px-3 py-2.5 text-xs font-bold tracking-wider uppercase text-stone-600 hover:bg-stone-50 hover:text-stone-900">Crop Calendars</a>
+            <a href="weather.html" class="block rounded px-3 py-2.5 text-xs font-bold tracking-wider uppercase text-stone-600 hover:bg-stone-50 hover:text-stone-900">Meteorological Alerts</a>
+            <a href="market.html" class="block rounded bg-stone-50 px-3 py-2.5 text-xs font-bold tracking-wider uppercase text-green-700">Market Analytics</a>
         </div>
     </nav>
 
@@ -33,56 +47,21 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <span class="text-xs font-bold tracking-widest uppercase text-green-700">Logistics & Asset Ledger</span>
             <h1 class="text-3xl font-light text-stone-900 mt-2">B2B Wholesale Liquidity & Pricing Terminal</h1>
-            <p class="text-stone-600 text-sm max-w-xl mt-1">Monitor transactional metrics across regional distribution channels and interface directly with licensed spatial storage providers.</p>
         </div>
     </header>
 
     <main class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-12 gap-8 items-start">
-            
             <section class="lg:col-span-5 space-y-4">
                 <h3 class="text-xs font-bold uppercase tracking-widest text-stone-500">Live Commodities Analytics</h3>
-                
                 <div class="border border-stone-200 bg-white rounded p-6 space-y-6">
                     <div class="space-y-2">
                         <div class="flex justify-between items-baseline text-xs font-mono">
-                            <span class="font-bold text-stone-900">Premium White Maize (Metric Ton)</span>
+                            <span class="font-bold text-stone-900">Premium White Maize (MT)</span>
                             <span class="font-bold text-green-700">+12.4%</span>
                         </div>
                         <div class="w-full bg-stone-100 h-2 rounded overflow-hidden">
                             <div class="bg-green-600 h-2 rounded" style="width: 78%"></div>
-                        </div>
-                        <div class="flex justify-between text-2xs text-stone-400 font-mono">
-                            <span>Index Base: Stable Vol</span>
-                            <span class="text-stone-800">Current Value Metric: High</span>
-                        </div>
-                    </div>
-
-                    <div class="space-y-2 border-t border-stone-100 pt-4">
-                        <div class="flex justify-between items-baseline text-xs font-mono">
-                            <span class="font-bold text-stone-900">Dehydrated Cassava Flour</span>
-                            <span class="font-bold text-stone-500">0.00%</span>
-                        </div>
-                        <div class="w-full bg-stone-100 h-2 rounded overflow-hidden">
-                            <div class="bg-stone-400 h-2 rounded" style="width: 45%"></div>
-                        </div>
-                        <div class="flex justify-between text-2xs text-stone-400 font-mono">
-                            <span>Index Base: Low Liquidity</span>
-                            <span class="text-stone-800">Current Value Metric: Baseline</span>
-                        </div>
-                    </div>
-
-                    <div class="space-y-2 border-t border-stone-100 pt-4">
-                        <div class="flex justify-between items-baseline text-xs font-mono">
-                            <span class="font-bold text-stone-900">Export-Grade Hot Pepper Array</span>
-                            <span class="font-bold text-red-600">-3.1%</span>
-                        </div>
-                        <div class="w-full bg-stone-100 h-2 rounded overflow-hidden">
-                            <div class="bg-red-500 h-2 rounded" style="width: 32%"></div>
-                        </div>
-                        <div class="flex justify-between text-2xs text-stone-400 font-mono">
-                            <span>Index Base: High Over-Supply</span>
-                            <span class="text-stone-800">Current Value Metric: Depressed</span>
                         </div>
                     </div>
                 </div>
@@ -90,38 +69,35 @@
 
             <section class="lg:col-span-7 space-y-4">
                 <h3 class="text-xs font-bold uppercase tracking-widest text-stone-500">Licensed Warehouses & Off-Takers</h3>
-                
                 <div class="space-y-3">
                     <div class="border border-stone-200 bg-white p-5 rounded flex flex-col sm:flex-row justify-between sm:items-center gap-4 hover:border-stone-400 transition-colors">
                         <div class="space-y-1">
-                            <div class="flex items-center gap-2">
-                                <h4 class="text-sm font-bold text-stone-900">Apex Agricultural Aggregators Ltd</h4>
-                                <span class="bg-stone-100 text-stone-700 px-1.5 py-0.5 rounded text-2xs font-mono font-medium border border-stone-200">Tier-1 Partner</span>
-                            </div>
+                            <h4 class="text-sm font-bold text-stone-900">Apex Agricultural Aggregators Ltd</h4>
                             <p class="text-stone-500 text-xs">Primary Acquisition: Cereals, Legumes, Grains.</p>
-                            <span class="block text-2xs font-mono text-stone-400">Logistics Footprint: Central Processing Zone B</span>
                         </div>
-                        <button class="bg-stone-900 hover:bg-stone-800 text-white font-mono text-2xs font-bold uppercase tracking-wider px-3 py-2 rounded self-start sm:self-auto transition">
-                            Verify Allocation
-                        </button>
-                    </div>
-
-                    <div class="border border-stone-200 bg-white p-5 rounded flex flex-col sm:flex-row justify-between sm:items-center gap-4 hover:border-stone-400 transition-colors">
-                        <div class="space-y-1">
-                            <div class="flex items-center gap-2">
-                                <h4 class="text-sm font-bold text-stone-900">Metro Cold-Chain Storage Solutions</h4>
-                                <span class="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded text-2xs font-mono font-medium border border-blue-200">Refrigerated Storage</span>
-                            </div>
-                            <p class="text-stone-500 text-xs">Primary Acquisition: Perishables, Horticultural Products.</p>
-                            <span class="block text-2xs font-mono text-stone-400">Logistics Footprint: Coastal Transport Anchor</span>
-                        </div>
-                        <button class="bg-stone-900 hover:bg-stone-800 text-white font-mono text-2xs font-bold uppercase tracking-wider px-3 py-2 rounded self-start sm:self-auto transition">
-                            Verify Allocation
-                        </button>
+                        <button class="bg-stone-900 text-white font-mono text-2xs font-bold uppercase px-3 py-2 rounded self-start sm:self-auto">Verify Allocation</button>
                     </div>
                 </div>
             </section>
         </div>
     </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleBtn = document.getElementById("menu-toggle-btn");
+            const mobileMenu = document.getElementById("mobile-menu-container");
+            const iconPath = document.getElementById("hamburger-icon-path");
+
+            toggleBtn.addEventListener("click", () => {
+                if (mobileMenu.classList.contains("hidden")) {
+                    mobileMenu.classList.remove("hidden");
+                    iconPath.setAttribute("d", "M6 18L18 6M6 6l12 12");
+                } else {
+                    mobileMenu.classList.add("hidden");
+                    iconPath.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
