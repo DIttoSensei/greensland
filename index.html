@@ -52,8 +52,14 @@
                     <a href="market.html" class="hover:text-stone-900 transition-colors px-1 py-7">Market Analytics</a>
                 </div>
 
-                <div class="hidden sm:flex lg:block items-center">
-                    <a href="calendar.html" class="text-xs font-bold tracking-wider uppercase border border-stone-300 px-4 py-2.5 rounded hover:bg-stone-50 transition">
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="login.html" id="login" class="text-xs font-bold tracking-wider uppercase border border-stone-300 px-4 py-2.5 rounded hover:bg-stone-50 transition">
+                        Login
+                    </a>
+                    <a href="signup.html" id="signup" class="text-xs font-bold tracking-wider uppercase bg-green-700 text-white px-4 py-2.5 rounded hover:bg-green-800 transition">
+                        Sign Up
+                    </a>
+                    <a href="calendar.html" id="dashboard" class="text-xs font-bold tracking-wider uppercase border border-stone-300 px-4 py-2.5 rounded hover:bg-stone-50 transition">
                         Access Dashboard
                     </a>
                 </div>
@@ -285,6 +291,25 @@
 
             targetElements.forEach(element => layoutObserver.observe(element));
         });
+
+        async function checkAuthStatus(){
+            const login = document.getElementById('login');
+            const signup = document.getElementById('signup');
+            const dashboard = document.getElementById('dashboard')
+
+            token = localStorage.getItem("authToken");
+            if (token){
+                login.hidden = true;
+                signup.hidden = true;
+                dashboard.hidden = false;
+            } else {
+                login.hidden = false;
+                signup.hidden = false;
+                dashboard.hidden = true;
+            }
+        }
+
+        checkAuthStatus();
     </script>
 </body>
 </html>

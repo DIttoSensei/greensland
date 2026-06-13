@@ -1,0 +1,6 @@
+[tool.fastapi]
+entrypoint = "backend.main:app"
+
+[tool.pyright]
+pythonVersion = "3.11"
+extraPaths = ["."]
