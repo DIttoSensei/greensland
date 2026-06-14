@@ -49,7 +49,8 @@ class ACCOUNTSDB(Base):
     email = Column(String, nullable=True)
     password = Column(String, index=True)
     usertype = Column(String)
-    Base.metadata.create_all(bind=engine)
+
+Base.metadata.create_all(bind=engine)
     
 
 class ACCOUNTS(BaseModel):
