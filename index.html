@@ -296,12 +296,21 @@
             const login = document.getElementById('login');
             const signup = document.getElementById('signup');
             const dashboard = document.getElementById('dashboard')
+            const current_time = Math.floor(Date.now() / 1000)
 
             token = localStorage.getItem("authToken");
             if (token){
-                login.hidden = true;
-                signup.hidden = true;
-                dashboard.hidden = false;
+                const payload = JSON.parse(atob(token.split('.')[1]));
+                if (payload.exp < current_time){
+                    localStorage.removeItem("authToken");
+                    login.hidden = false;
+                    signup.hidden = false;
+                    dashboard.hidden = true;
+                }else{
+                    login.hidden = true;
+                    signup.hidden = true;
+                    dashboard.hidden = false;
+                }
             } else {
                 login.hidden = false;
                 signup.hidden = false;
