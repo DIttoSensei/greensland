@@ -47,9 +47,9 @@
                 
                 <div class="hidden lg:flex items-center gap-6 text-xs font-semibold tracking-wider uppercase text-stone-600">
                     <a href="index.html" class="text-green-700 border-b-2 border-green-700 px-1 py-7">Platform Core</a>
-                    <a href="calendar.html" class="hover:text-stone-900 transition-colors px-1 py-7">Crop Calendars</a>
-                    <a href="weather.html" class="hover:text-stone-900 transition-colors px-1 py-7">Meteorological Alerts</a>
-                    <a href="market.html" class="hover:text-stone-900 transition-colors px-1 py-7">Market Analytics</a>
+                    <a href="#" onclick="handleTokenPages('calender.html')" class="hover:text-stone-900 transition-colors px-1 py-7">Crop Calendars</a>
+                    <a href="#" onclick="handleTokenPages('weather.html')" class="hover:text-stone-900 transition-colors px-1 py-7">Meteorological Alerts</a>
+                    <a href="#" onclick="handleTokenPages('market.html')" class="hover:text-stone-900 transition-colors px-1 py-7">Market Analytics</a>
                 </div>
 
                 <div class="hidden sm:flex items-center gap-3">
@@ -318,7 +318,17 @@
             }
         }
 
-        checkAuthStatus();
+        function handleTokenpages (target){
+            // Handle token-based page navigation
+            token = localStorage.getItem("authToken");
+            if (token){
+                window.location.href = target;
+            }else{
+                window.location.href = "signup.html";
+            }
+        }
+
+       checkAuthStatus(); 
     </script>
 </body>
 </html>
