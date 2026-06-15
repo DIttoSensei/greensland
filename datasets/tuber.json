@@ -1,0 +1,185 @@
+{
+  "crops": [
+    {
+      "id": "cassava",
+      "name": "Cassava",
+      "category": "tuber",
+      "icon": "🍠",
+      "planting_zones": {
+        "forest": { "months": ["March", "April", "September", "October"], "notes": "Can be planted at the start of either rainy season, very flexible" },
+        "savanna": { "months": ["April", "May", "June"], "notes": "Plant early in the rains to establish before the dry season" },
+        "sahel": { "months": [], "notes": "Generally not suited to the Sahel due to insufficient rainfall and short growing season" }
+      },
+      "soil": {
+        "type": "Well-drained sandy-loam soil; tolerates poor soils better than most crops",
+        "ph_range": "5.0 - 6.5",
+        "testing_tip": "Cassava grows in soils too poor for maize. Avoid waterlogged or heavy clay soils as they cause root rot."
+      },
+      "spacing": {
+        "row_spacing_cm": 100,
+        "plant_spacing_cm": 100,
+        "planting_depth_cm": 5,
+        "seeds_per_hole": 1
+      },
+      "fertilizer": {
+        "basal": "NPK 15:15:15 at 100kg per hectare if soil is very poor, often not necessary on fertile land",
+        "topdress": "Potassium-rich fertilizer (e.g. muriate of potash) at 3 months improves tuber size",
+        "organic_alternative": "Cassava is often grown with no fertilizer at all on fairly fertile land; compost helps on degraded soils"
+      },
+      "watering": {
+        "frequency": "Rain-fed; cassava is highly drought tolerant once established",
+        "critical_stages": "First 2-3 months after planting need reasonable moisture for stem cuttings to root and sprout"
+      },
+      "common_pests_diseases": [
+        { "name": "Cassava mosaic virus", "sign": "Mottled yellow-green leaves, stunted growth", "remedy": "Use disease-free stem cuttings from certified sources, remove and destroy infected plants" },
+        { "name": "Cassava mealybug", "sign": "White cottony masses on stems and leaves, leaf curling", "remedy": "Use resistant varieties, encourage natural predators, avoid moving infected cuttings to new fields" },
+        { "name": "Root rot", "sign": "Tubers soft and rotten when dug up", "remedy": "Improve drainage, avoid planting in waterlogged spots" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "8-18 months depending on variety, can be left in ground longer as a 'food bank'",
+        "signs_of_readiness": "Lower leaves yellow and drop, tubers reach desired size when test-dug",
+        "harvest_method": "Cut stem near ground, dig around the base carefully and pull up the tuber cluster by hand or with a hoe"
+      },
+      "beginner_tips": [
+        "Use healthy, disease-free stem cuttings about 25-30cm long, plant at a slight angle with 2/3 of the cutting buried",
+        "Cassava can stay in the ground for many months past maturity, useful as a food reserve, but leaving too long can make tubers fibrous",
+        "Great first crop for poor soils since it requires minimal input and is very forgiving of mistakes"
+      ]
+    },
+    {
+      "id": "yam",
+      "name": "Yam",
+      "category": "tuber",
+      "icon": "🍠",
+      "planting_zones": {
+        "forest": { "months": ["November", "December", "March"], "notes": "Planted at the start of dry season (Nov-Dec) in some areas for early yam, or with first rains (March)" },
+        "savanna": { "months": ["March", "April"], "notes": "Plant at the onset of rains, mounds should be prepared before rains start" }
+      },
+      "soil": {
+        "type": "Deep, loose, well-drained loamy soil - yams need soft soil to allow tuber expansion",
+        "ph_range": "5.5 - 6.5",
+        "testing_tip": "Push a stick into the soil 30cm deep - if it goes in easily without much resistance, the soil is loose enough. Heavy clay produces misshapen tubers."
+      },
+      "spacing": {
+        "row_spacing_cm": 100,
+        "plant_spacing_cm": 100,
+        "planting_depth_cm": 10,
+        "seeds_per_hole": 1
+      },
+      "fertilizer": {
+        "basal": "Well-rotted manure or compost mixed into the mound before planting, about 2-3kg per mound",
+        "topdress": "NPK 15:15:15 at 6-8 weeks after sprouting, applied around the base of the mound",
+        "organic_alternative": "Yams traditionally grow well with just compost-rich mounds and crop rotation with legumes the prior season"
+      },
+      "watering": {
+        "frequency": "Rain-fed; needs consistent moisture especially in the first 2-3 months",
+        "critical_stages": "Sprouting and early vine establishment - dry spells here delay growth significantly"
+      },
+      "common_pests_diseases": [
+        { "name": "Yam beetle", "sign": "Holes bored into tubers", "remedy": "Clear and burn bush residue before planting to reduce beetle populations, rotate fields" },
+        { "name": "Anthracnose", "sign": "Dark lesions on leaves and stems, vine dieback", "remedy": "Use resistant varieties, avoid overcrowding for better airflow" },
+        { "name": "Nematodes", "sign": "Cracked, scarred tuber skin", "remedy": "Crop rotation, use of clean planting material (seed yams)" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "7-10 months depending on variety",
+        "signs_of_readiness": "Vines and leaves turn yellow and dry up",
+        "harvest_method": "Carefully dig around the mound by hand to avoid damaging the tuber, lift gently to preserve it for storage"
+      },
+      "beginner_tips": [
+        "Mound or ridge preparation is the most important step - mounds should be at least 1m high and wide for good tuber development",
+        "Stake the vines with sticks so they climb - this improves light exposure and yield significantly",
+        "Use small 'seed yams' (cut pieces of tuber with a bud) as planting material, cure cut pieces in shade for a few days before planting to prevent rot"
+      ]
+    },
+    {
+      "id": "sweet_potato",
+      "name": "Sweet Potato",
+      "category": "tuber",
+      "icon": "🍠",
+      "planting_zones": {
+        "forest": { "months": ["March", "April", "September"], "notes": "Two planting windows possible due to bimodal rainfall" },
+        "savanna": { "months": ["May", "June"], "notes": "Plant with main rains" },
+        "sahel": { "months": ["July"], "notes": "Short-season varieties recommended, plant once rains are established" }
+      },
+      "soil": {
+        "type": "Sandy-loam, well-drained soil; heavy clay produces poor-shaped tubers",
+        "ph_range": "5.5 - 6.5",
+        "testing_tip": "Similar test to yam - soil should be loose enough for tubers to swell without restriction. Ridging the soil before planting helps on heavier soils."
+      },
+      "spacing": {
+        "row_spacing_cm": 90,
+        "plant_spacing_cm": 30,
+        "planting_depth_cm": 5,
+        "seeds_per_hole": 1
+      },
+      "fertilizer": {
+        "basal": "Light application of NPK 15:15:15 at planting, sweet potato doesn't need heavy nitrogen (too much leaf growth, fewer tubers)",
+        "topdress": "Potassium-rich fertilizer improves tuber quality, apply around 6 weeks after planting",
+        "organic_alternative": "Compost worked into ridges before planting vine cuttings"
+      },
+      "watering": {
+        "frequency": "Rain-fed; drought tolerant but yields better with consistent moisture",
+        "critical_stages": "First 2-3 weeks after planting vine cuttings, to establish roots"
+      },
+      "common_pests_diseases": [
+        { "name": "Sweet potato weevil", "sign": "Tunnels and bitter taste in tubers", "remedy": "Practice crop rotation, hill up soil around base to prevent weevil access, harvest promptly at maturity" },
+        { "name": "Leaf-eating caterpillars", "sign": "Chewed leaves", "remedy": "Hand-pick, use neem-based sprays if severe" },
+        { "name": "Virus diseases", "sign": "Leaf mottling, stunted vines", "remedy": "Use virus-free planting material" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "90-150 days depending on variety",
+        "signs_of_readiness": "Leaves start yellowing, test-dig a few plants to check tuber size",
+        "harvest_method": "Loosen soil around the ridge with a hoe and lift tubers carefully to avoid cuts that cause rot in storage"
+      },
+      "beginner_tips": [
+        "Grown from vine cuttings, not seeds - take 25-30cm cuttings from healthy vines and plant most of the cutting into ridged soil",
+        "Plant on ridges or mounds, not flat ground, for best tuber formation",
+        "Harvest promptly once mature - leaving tubers in the ground too long invites weevil damage"
+      ]
+    },
+    {
+      "id": "cocoyam",
+      "name": "Cocoyam (Taro/Tania)",
+      "category": "tuber",
+      "icon": "🌿",
+      "planting_zones": {
+        "forest": { "months": ["March", "April", "September"], "notes": "Thrives in the humid forest zone with reliable rainfall" },
+        "savanna": { "months": ["May", "June"], "notes": "Needs more consistent moisture than cassava or yam, plant with reliable rains" }
+      },
+      "soil": {
+        "type": "Rich, moisture-retentive loamy soil - cocoyam likes more water than yam or cassava",
+        "ph_range": "5.5 - 6.5",
+        "testing_tip": "Cocoyam does well near streams or low-lying moist areas where other tubers might rot. If your land stays slightly damp after rain, that's ideal."
+      },
+      "spacing": {
+        "row_spacing_cm": 90,
+        "plant_spacing_cm": 90,
+        "planting_depth_cm": 8,
+        "seeds_per_hole": 1
+      },
+      "fertilizer": {
+        "basal": "Compost or well-rotted manure mixed into planting holes",
+        "topdress": "NPK 15:15:15 at 2 and 4 months after planting if growth is slow",
+        "organic_alternative": "Mulching with dried leaves around plants helps retain the moisture cocoyam needs"
+      },
+      "watering": {
+        "frequency": "Needs more consistent moisture than other tubers; supplement with watering during dry spells if possible",
+        "critical_stages": "Throughout growth - cocoyam is sensitive to prolonged drought unlike cassava or yam"
+      },
+      "common_pests_diseases": [
+        { "name": "Taro leaf blight", "sign": "Large brown blotches on leaves that spread quickly in wet weather", "remedy": "Improve spacing for airflow, remove and destroy infected leaves promptly" },
+        { "name": "Aphids", "sign": "Clusters of small insects on young leaves, curling", "remedy": "Wash off with water spray, neem extract for persistent infestations" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "8-12 months",
+        "signs_of_readiness": "Older leaves yellow and die back, corms reach harvestable size",
+        "harvest_method": "Dig carefully around the base to lift the main corm and surrounding cormels without bruising"
+      },
+      "beginner_tips": [
+        "Plant cormels (small side tubers) with the growing tip facing up",
+        "Choose a slightly shaded or moist part of your farm if possible - full sun with no irrigation can stress the plant",
+        "Leaves are also edible (cooked, never raw) and are a useful side income/food source while tubers mature"
+      ]
+    }
+  ]
+}

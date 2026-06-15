@@ -1,0 +1,187 @@
+{
+  "crops": [
+    {
+      "id": "maize",
+      "name": "Maize (Corn)",
+      "category": "cereal",
+      "icon": "🌽",
+      "planting_zones": {
+        "forest": { "months": ["March", "April", "August", "September"], "notes": "Two cropping seasons possible - early rains (March-April) and late rains (August-September)" },
+        "savanna": { "months": ["May", "June"], "notes": "Single cropping season aligned with main rains" },
+        "sahel": { "months": ["June", "July"], "notes": "Short window due to limited rainfall, drought-tolerant varieties recommended" }
+      },
+      "soil": {
+        "type": "Well-drained loamy or sandy-loam soil",
+        "ph_range": "5.5 - 7.0",
+        "testing_tip": "Take soil to a depth of 20cm from 5 spots in the field, mix together, and send a sample to a local agricultural extension office for pH and nutrient testing. A cheap DIY check: mix soil with water to form mud, if it holds shape like clay it's too heavy for maize without amendment."
+      },
+      "spacing": {
+        "row_spacing_cm": 75,
+        "plant_spacing_cm": 25,
+        "planting_depth_cm": 5,
+        "seeds_per_hole": 2
+      },
+      "fertilizer": {
+        "basal": "NPK 15:15:15 at planting, about 100kg per hectare",
+        "topdress": "Urea (46% N) applied 4-6 weeks after planting when plants are knee-high, about 50kg per hectare",
+        "organic_alternative": "Well-rotted poultry or cow manure worked into soil 2 weeks before planting, roughly 2-3 handfuls per planting hole"
+      },
+      "watering": {
+        "frequency": "Rain-fed in most zones; if irrigating, water every 3-4 days during dry spells",
+        "critical_stages": "Most water-sensitive during tasseling and silking (about 50-60 days after planting) - drought here drastically cuts yield"
+      },
+      "common_pests_diseases": [
+        { "name": "Fall armyworm", "sign": "Holes in leaves, damaged whorls", "remedy": "Hand-pick larvae early morning, apply neem extract or recommended insecticide" },
+        { "name": "Maize streak virus", "sign": "Yellow streaking on leaves", "remedy": "Use resistant varieties, control leafhopper vectors early" },
+        { "name": "Stalk borer", "sign": "Holes in stem, wilting", "remedy": "Remove and destroy affected stalks, rotate crops" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "90-120 days depending on variety",
+        "signs_of_readiness": "Husks turn pale yellow/brown and dry, kernels hard when pressed with thumbnail",
+        "harvest_method": "Snap cobs off the stalk by hand, dry in sun for 3-5 days before shelling and storage"
+      },
+      "beginner_tips": [
+        "Plant after the first reliable rains, not just after one light shower - a false start can mean replanting",
+        "Two seeds per hole gives insurance against poor germination, thin to one strong seedling after 2 weeks",
+        "Intercropping with cowpea or groundnut helps fix nitrogen in soil and gives you a second harvest"
+      ]
+    },
+    {
+      "id": "rice_upland",
+      "name": "Upland Rice",
+      "category": "cereal",
+      "icon": "🌾",
+      "planting_zones": {
+        "forest": { "months": ["April", "May"], "notes": "Plant with onset of rains for upland (non-flooded) rice" },
+        "savanna": { "months": ["May", "June"], "notes": "Aligns with main rainy season" },
+        "sahel": { "months": ["June", "July"], "notes": "Only short-duration varieties recommended due to short rains" }
+      },
+      "soil": {
+        "type": "Clay-loam soil that retains moisture well, slightly heavier than maize soil",
+        "ph_range": "5.0 - 6.5",
+        "testing_tip": "Squeeze a moist handful of soil - if it forms a ball that holds together but crumbles with light pressure, it has good clay content for rice. Pure sand won't hold water long enough."
+      },
+      "spacing": {
+        "row_spacing_cm": 20,
+        "plant_spacing_cm": 20,
+        "planting_depth_cm": 3,
+        "seeds_per_hole": 3
+      },
+      "fertilizer": {
+        "basal": "NPK 15:15:15 at 100-150kg per hectare at planting",
+        "topdress": "Urea split into two applications - 30 days and 50 days after planting, total around 50-80kg per hectare",
+        "organic_alternative": "Compost or rice husk ash worked into soil before planting improves both nutrients and water retention"
+      },
+      "watering": {
+        "frequency": "Upland rice depends on consistent rainfall; supplement with irrigation if a dry spell exceeds 7 days",
+        "critical_stages": "Flowering and grain-filling stages are most sensitive - water shortage here causes empty grains (panicle sterility)"
+      },
+      "common_pests_diseases": [
+        { "name": "Rice blast", "sign": "Diamond-shaped lesions on leaves", "remedy": "Use resistant varieties, avoid excess nitrogen, ensure good field drainage" },
+        { "name": "Birds", "sign": "Grain loss at maturity", "remedy": "Use scarecrows, netting, or noise deterrents near harvest" },
+        { "name": "Stem borer", "sign": "Dead hearts (central shoot dries up)", "remedy": "Remove and burn affected tillers, practice field sanitation after harvest" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "100-140 days depending on variety",
+        "signs_of_readiness": "80% of the panicle turns golden yellow, grains hard not milky",
+        "harvest_method": "Cut with sickle close to the ground, sun-dry on tarpaulins for 2-3 days before threshing"
+      },
+      "beginner_tips": [
+        "Soak seeds in water for 24 hours before planting to speed up germination",
+        "Weeding in the first 6 weeks is critical - rice is a poor competitor against weeds early on",
+        "Don't plant rice in pure sandy soil without amendment, it drains too fast and the crop will suffer drought stress"
+      ]
+    },
+    {
+      "id": "sorghum",
+      "name": "Sorghum (Guinea Corn)",
+      "category": "cereal",
+      "icon": "🌾",
+      "planting_zones": {
+        "forest": { "months": ["May", "June"], "notes": "Less common in forest zone but grows with sufficient rain" },
+        "savanna": { "months": ["June", "July"], "notes": "Major cereal crop here, plant with main rains" },
+        "sahel": { "months": ["June", "July"], "notes": "Excellent drought tolerance makes it a staple here" }
+      },
+      "soil": {
+        "type": "Tolerates a wide range including poor sandy soils, but performs best on loamy soils",
+        "ph_range": "5.5 - 7.5",
+        "testing_tip": "Sorghum is forgiving of soil quality - if maize struggles on your land, sorghum is a safer bet. Still avoid waterlogged areas."
+      },
+      "spacing": {
+        "row_spacing_cm": 75,
+        "plant_spacing_cm": 25,
+        "planting_depth_cm": 4,
+        "seeds_per_hole": 3
+      },
+      "fertilizer": {
+        "basal": "NPK 15:15:15 at 50-100kg per hectare at planting",
+        "topdress": "Urea at 25-50kg per hectare about 5 weeks after planting",
+        "organic_alternative": "Manure application before planting, sorghum responds well even on low-fertility soils"
+      },
+      "watering": {
+        "frequency": "Largely rain-fed, one of the most drought-tolerant cereals",
+        "critical_stages": "Flowering stage is most sensitive to drought, though sorghum recovers better than maize from water stress"
+      },
+      "common_pests_diseases": [
+        { "name": "Birds (especially quelea)", "sign": "Grain loss at the grain-filling/maturity stage", "remedy": "Bird scaring, netting, harvesting promptly at maturity" },
+        { "name": "Striga (witchweed)", "sign": "Parasitic weed attached to roots, stunted crop", "remedy": "Crop rotation with legumes, use of resistant varieties, hand-pulling before flowering" },
+        { "name": "Smut", "sign": "Grain heads replaced by black powdery masses", "remedy": "Use certified disease-free seed, treat seed before planting" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "100-150 days depending on variety",
+        "signs_of_readiness": "Grain heads turn brown and hard, lower leaves dry up",
+        "harvest_method": "Cut grain heads with a knife, dry thoroughly before threshing by beating"
+      },
+      "beginner_tips": [
+        "If your soil is poor or you're in a drier area, sorghum is more forgiving than maize",
+        "Watch for Striga weed - if it appears, don't plant cereals on that plot for a season, rotate with cowpea or groundnut",
+        "Birds can wipe out a crop in days at maturity - plan to harvest as soon as grain hardens"
+      ]
+    },
+    {
+      "id": "millet",
+      "name": "Pearl Millet",
+      "category": "cereal",
+      "icon": "🌾",
+      "planting_zones": {
+        "savanna": { "months": ["June", "July"], "notes": "Grown alongside sorghum in drier savanna areas" },
+        "sahel": { "months": ["June", "July"], "notes": "The most drought and heat tolerant major cereal, ideal for this zone" }
+      },
+      "soil": {
+        "type": "Performs well on poor, sandy soils where other cereals fail",
+        "ph_range": "5.0 - 7.0",
+        "testing_tip": "If your land is sandy and dries out quickly, millet is one of the few cereals that will still give a reasonable yield"
+      },
+      "spacing": {
+        "row_spacing_cm": 75,
+        "plant_spacing_cm": 30,
+        "planting_depth_cm": 3,
+        "seeds_per_hole": 4
+      },
+      "fertilizer": {
+        "basal": "NPK 15:15:15 at 50kg per hectare, millet doesn't need heavy feeding",
+        "topdress": "Urea at 25kg per hectare 4-5 weeks after planting if rains are good",
+        "organic_alternative": "Light application of manure, especially useful on very sandy soils to improve water retention"
+      },
+      "watering": {
+        "frequency": "Almost entirely rain-fed, extremely drought tolerant once established",
+        "critical_stages": "Germination and early seedling stage need some moisture; once established it survives long dry spells"
+      },
+      "common_pests_diseases": [
+        { "name": "Downy mildew", "sign": "White/grey fungal growth on leaves, distorted heads", "remedy": "Use treated seed, remove and destroy infected plants early" },
+        { "name": "Head smut", "sign": "Grain heads replaced with black spore masses", "remedy": "Seed treatment before planting, crop rotation" },
+        { "name": "Birds", "sign": "Loss of grain at maturity", "remedy": "Same as sorghum - scaring, netting, timely harvest" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "75-100 days, one of the fastest cereals",
+        "signs_of_readiness": "Grain heads droop and turn brown, grains feel hard",
+        "harvest_method": "Cut heads by hand, dry on mats, thresh by beating with sticks"
+      },
+      "beginner_tips": [
+        "Best choice if your area gets unreliable or short rains - it matures fast and tolerates dry conditions",
+        "Thin seedlings to 2-3 per hole after 2 weeks to avoid overcrowding",
+        "Often intercropped with cowpea - the cowpea covers the ground and reduces weeds while millet grows tall"
+      ]
+    }
+  ]
+}

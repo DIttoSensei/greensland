@@ -1,0 +1,232 @@
+{
+  "crops": [
+    {
+      "id": "tomato",
+      "name": "Tomato",
+      "category": "vegetable",
+      "icon": "🍅",
+      "planting_zones": {
+        "forest": { "months": ["September", "October", "January"], "notes": "Dry season planting (Jan) avoids heavy fungal disease pressure from rains; nursery first then transplant" },
+        "savanna": { "months": ["October", "November"], "notes": "Dry season cultivation near water sources is common and reduces disease pressure" },
+        "sahel": { "months": ["October", "November"], "notes": "Irrigated dry-season tomato is a major cash crop here" }
+      },
+      "soil": {
+        "type": "Rich, well-drained loamy soil with good organic matter",
+        "ph_range": "6.0 - 6.8",
+        "testing_tip": "Tomatoes are heavy feeders - if the soil looks pale/sandy with no dark organic matter, mix in compost or manure generously before planting"
+      },
+      "spacing": {
+        "row_spacing_cm": 75,
+        "plant_spacing_cm": 45,
+        "planting_depth_cm": 1,
+        "seeds_per_hole": 1
+      },
+      "fertilizer": {
+        "basal": "Compost or manure mixed into planting holes, plus NPK 15:15:15 at transplanting",
+        "topdress": "NPK or calcium nitrate every 2-3 weeks during fruiting to prevent blossom-end rot",
+        "organic_alternative": "Well-rotted manure plus wood ash for potassium, which improves fruit quality"
+      },
+      "watering": {
+        "frequency": "Water every 2-3 days, more frequently in very hot/dry weather; avoid wetting leaves to reduce disease",
+        "critical_stages": "Flowering and fruit development - inconsistent watering causes blossom-end rot and fruit cracking"
+      },
+      "common_pests_diseases": [
+        { "name": "Tomato leaf miner (Tuta absoluta)", "sign": "Tunnels in leaves and holes in fruit", "remedy": "Use pheromone traps, remove and destroy infested leaves, rotate crops" },
+        { "name": "Early/late blight", "sign": "Dark spots on leaves spreading to stems and fruit", "remedy": "Avoid overhead watering, stake plants for airflow, remove infected leaves promptly" },
+        { "name": "Blossom-end rot", "sign": "Dark sunken patches on fruit bottom", "remedy": "Ensure consistent watering and adequate calcium in soil" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "70-90 days from transplanting",
+        "signs_of_readiness": "Fruit color changes from green to the variety's mature color (red, orange etc), slightly soft to touch",
+        "harvest_method": "Hand-pick fruit with a slight twist, harvest every 2-3 days as fruits ripen at different times"
+      },
+      "beginner_tips": [
+        "Start seeds in a nursery bed or seed tray, transplant seedlings after 3-4 weeks when they have 4-5 true leaves",
+        "Stake or trellis plants early - this keeps fruit off the ground and reduces rot and pest access",
+        "Dry season tomato (with irrigation) often has fewer diseases than rainy season tomato due to lower humidity"
+      ]
+    },
+    {
+      "id": "pepper",
+      "name": "Pepper (Bell/Chili)",
+      "category": "vegetable",
+      "icon": "🌶️",
+      "planting_zones": {
+        "forest": { "months": ["September", "January"], "notes": "Can be grown in dry season with irrigation, less disease pressure than wet season" },
+        "savanna": { "months": ["October", "November"], "notes": "Dry season vegetable production is common near rivers/wells" },
+        "sahel": { "months": ["October", "November"], "notes": "Irrigated production during dry season" }
+      },
+      "soil": {
+        "type": "Well-drained, fertile sandy-loam soil",
+        "ph_range": "5.5 - 6.8",
+        "testing_tip": "Similar requirements to tomato - rich soil with good drainage, avoid waterlogging which causes root rot"
+      },
+      "spacing": {
+        "row_spacing_cm": 60,
+        "plant_spacing_cm": 40,
+        "planting_depth_cm": 1,
+        "seeds_per_hole": 1
+      },
+      "fertilizer": {
+        "basal": "Compost/manure plus NPK 15:15:15 at transplanting",
+        "topdress": "Light NPK application every 3-4 weeks during fruiting",
+        "organic_alternative": "Manure-rich planting holes, mulching to retain moisture"
+      },
+      "watering": {
+        "frequency": "Water every 2-3 days, peppers don't like waterlogging but also don't tolerate prolonged drought",
+        "critical_stages": "Flowering through fruit set - water stress here causes flower drop"
+      },
+      "common_pests_diseases": [
+        { "name": "Aphids/whiteflies", "sign": "Curled leaves, sticky residue, sooty mold", "remedy": "Wash with water spray, neem extract, encourage natural predators" },
+        { "name": "Anthracnose", "sign": "Sunken dark spots on fruit", "remedy": "Avoid overhead watering, remove infected fruit promptly, ensure good spacing" },
+        { "name": "Bacterial wilt", "sign": "Sudden wilting of whole plant despite moist soil", "remedy": "Remove and destroy affected plants immediately, rotate crops" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "70-90 days from transplanting for first harvest, continues for months",
+        "signs_of_readiness": "Fruit reaches full size and changes color from green to red/yellow/orange depending on variety and ripeness desired",
+        "harvest_method": "Hand-pick with a slight twist or use scissors, regular harvesting encourages more flowering"
+      },
+      "beginner_tips": [
+        "Start in nursery beds like tomato, transplant after 4-5 weeks",
+        "Pepper plants can keep producing for several months if well cared for - regular harvesting is key",
+        "Green peppers are unripe fruit of the same plant - if you wait, they turn red/orange/yellow and become sweeter"
+      ]
+    },
+    {
+      "id": "okra",
+      "name": "Okra",
+      "category": "vegetable",
+      "icon": "🌿",
+      "planting_zones": {
+        "forest": { "months": ["March", "April", "August"], "notes": "Grows well in both rainy seasons" },
+        "savanna": { "months": ["May", "June"], "notes": "Common backyard and farm vegetable" },
+        "sahel": { "months": ["June", "July"], "notes": "Tolerates heat well, suited to this zone with adequate water" }
+      },
+      "soil": {
+        "type": "Well-drained sandy-loam to loamy soil",
+        "ph_range": "6.0 - 7.0",
+        "testing_tip": "Okra is fairly tolerant - if your soil grows reasonable maize, it will grow okra"
+      },
+      "spacing": {
+        "row_spacing_cm": 60,
+        "plant_spacing_cm": 40,
+        "planting_depth_cm": 2,
+        "seeds_per_hole": 2
+      },
+      "fertilizer": {
+        "basal": "NPK 15:15:15 at planting, around 50-100kg per hectare",
+        "topdress": "Light nitrogen topdress 3-4 weeks after planting boosts leafy growth before flowering",
+        "organic_alternative": "Compost mixed into planting rows works well"
+      },
+      "watering": {
+        "frequency": "Water every 2-3 days if no rain; okra is moderately drought tolerant once established",
+        "critical_stages": "Flowering and pod development - consistent moisture gives tender pods"
+      },
+      "common_pests_diseases": [
+        { "name": "Aphids", "sign": "Clusters on shoots and leaf undersides", "remedy": "Water spray, neem extract" },
+        { "name": "Pod borers", "sign": "Holes in pods", "remedy": "Harvest pods young and regularly, remove damaged pods" },
+        { "name": "Leaf spot/blight", "sign": "Spotted, yellowing leaves", "remedy": "Improve spacing for airflow, remove affected leaves" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "50-65 days to first harvest, continues for weeks",
+        "signs_of_readiness": "Pods are 5-10cm long, still tender (snap easily, not woody)",
+        "harvest_method": "Cut pods with a knife every 2-3 days - frequent harvesting keeps the plant producing and pods tender"
+      },
+      "beginner_tips": [
+        "Harvest pods young and often - if left too long they become tough and fibrous and the plant slows production",
+        "Thin to one strong seedling per hole after 2 weeks if you planted 2 seeds",
+        "Okra plants can grow quite tall (1.5-2m) - some farmers stake taller varieties"
+      ]
+    },
+    {
+      "id": "garden_egg",
+      "name": "Garden Egg (Eggplant/Aubergine)",
+      "category": "vegetable",
+      "icon": "🍆",
+      "planting_zones": {
+        "forest": { "months": ["September", "January"], "notes": "Dry season cultivation common with irrigation" },
+        "savanna": { "months": ["October", "November"], "notes": "Dry season vegetable, grown near water sources" }
+      },
+      "soil": {
+        "type": "Fertile, well-drained sandy-loam soil rich in organic matter",
+        "ph_range": "5.5 - 6.8",
+        "testing_tip": "Similar to tomato and pepper - heavy feeder, needs organic matter worked in before planting"
+      },
+      "spacing": {
+        "row_spacing_cm": 75,
+        "plant_spacing_cm": 60,
+        "planting_depth_cm": 1,
+        "seeds_per_hole": 1
+      },
+      "fertilizer": {
+        "basal": "Compost/manure plus NPK 15:15:15 at transplanting",
+        "topdress": "NPK application every 3-4 weeks during fruiting",
+        "organic_alternative": "Generous compost application, mulching to retain moisture"
+      },
+      "watering": {
+        "frequency": "Water every 2-3 days, especially during fruiting",
+        "critical_stages": "Flowering and fruit development"
+      },
+      "common_pests_diseases": [
+        { "name": "Flea beetles", "sign": "Small holes peppered across leaves", "remedy": "Neem extract, remove weeds that host beetles nearby" },
+        { "name": "Fruit and shoot borer", "sign": "Wilting shoots, holes in fruit", "remedy": "Prune and destroy affected shoots, harvest fruit promptly" },
+        { "name": "Bacterial wilt", "sign": "Sudden wilting", "remedy": "Remove affected plants, rotate crops" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "80-100 days from transplanting, continues for months",
+        "signs_of_readiness": "Fruit reaches full size for the variety, skin glossy (not dull which indicates over-ripeness)",
+        "harvest_method": "Cut fruit with a sharp knife leaving a short stem attached, harvest regularly to encourage more flowering"
+      },
+      "beginner_tips": [
+        "Start in nursery, transplant after 4-5 weeks when seedlings have several true leaves",
+        "Regular harvesting (every few days) keeps plants productive for a long period",
+        "A reliable, low-maintenance crop once established - popular for both home consumption and local markets"
+      ]
+    },
+    {
+      "id": "onion",
+      "name": "Onion",
+      "category": "vegetable",
+      "icon": "🧅",
+      "planting_zones": {
+        "savanna": { "months": ["October", "November"], "notes": "Major dry season irrigated crop in middle belt and northern areas" },
+        "sahel": { "months": ["October", "November"], "notes": "Onion is a key dry season cash crop here, grown with irrigation along rivers" }
+      },
+      "soil": {
+        "type": "Loose, fertile, well-drained sandy-loam soil",
+        "ph_range": "6.0 - 6.8",
+        "testing_tip": "Onions need loose soil for bulb expansion - heavily compacted or clay soils should be well-tilled and amended with compost"
+      },
+      "spacing": {
+        "row_spacing_cm": 20,
+        "plant_spacing_cm": 10,
+        "planting_depth_cm": 2,
+        "seeds_per_hole": 1
+      },
+      "fertilizer": {
+        "basal": "Compost plus NPK 15:15:15 at transplanting",
+        "topdress": "Nitrogen topdress in early growth, switch to potassium-rich fertilizer as bulbs start forming",
+        "organic_alternative": "Well-decomposed compost worked into beds before transplanting"
+      },
+      "watering": {
+        "frequency": "Regular watering every 2-3 days, reduce watering 2-3 weeks before harvest to help bulbs cure",
+        "critical_stages": "Bulb formation stage - inconsistent watering causes small or split bulbs"
+      },
+      "common_pests_diseases": [
+        { "name": "Thrips", "sign": "Silvery streaks on leaves, stunted growth", "remedy": "Blue sticky traps, neem extract, avoid water stress which worsens thrips damage" },
+        { "name": "Purple blotch", "sign": "Purple-brown lesions on leaves", "remedy": "Avoid overhead watering, ensure good spacing for airflow" },
+        { "name": "Downy mildew", "sign": "Pale patches turning grey/purple, fuzzy growth", "remedy": "Improve drainage and airflow, remove infected leaves" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "90-120 days from transplanting",
+        "signs_of_readiness": "Leaves/tops yellow, fall over, and begin to dry",
+        "harvest_method": "Loosen soil and lift bulbs by hand, leave to cure (dry) in a shaded, airy spot for 1-2 weeks before storage"
+      },
+      "beginner_tips": [
+        "Start from seed in a nursery bed, transplant seedlings after 6-8 weeks when about pencil-thickness",
+        "Stop watering as bulbs mature - this helps the neck dry down which improves storage life",
+        "Cure (dry) onions properly after harvest in a shaded, ventilated area before storing to prevent rot"
+      ]
+    }
+  ]
+}

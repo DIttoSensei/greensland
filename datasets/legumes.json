@@ -1,0 +1,184 @@
+{
+  "crops": [
+    {
+      "id": "cowpea",
+      "name": "Cowpea (Beans)",
+      "category": "legume",
+      "icon": "🫘",
+      "planting_zones": {
+        "forest": { "months": ["August", "September"], "notes": "Often planted late in the season after maize to avoid pest pressure" },
+        "savanna": { "months": ["June", "July"], "notes": "Commonly intercropped with sorghum or millet" },
+        "sahel": { "months": ["June", "July"], "notes": "A vital protein source, drought tolerant once established" }
+      },
+      "soil": {
+        "type": "Sandy-loam soils with good drainage; tolerates poorer soils than maize",
+        "ph_range": "5.5 - 7.0",
+        "testing_tip": "Cowpea is good at fixing its own nitrogen, so it doesn't demand rich soil. Avoid waterlogged ground which causes root rot."
+      },
+      "spacing": {
+        "row_spacing_cm": 60,
+        "plant_spacing_cm": 20,
+        "planting_depth_cm": 3,
+        "seeds_per_hole": 2
+      },
+      "fertilizer": {
+        "basal": "Light NPK 15:15:15 at 50kg per hectare, avoid excess nitrogen which causes leafy growth at the expense of pods",
+        "topdress": "Usually not needed if basal application is done correctly",
+        "organic_alternative": "Cowpea improves soil for the next crop through nitrogen fixation - minimal external fertilizer needed"
+      },
+      "watering": {
+        "frequency": "Rain-fed; moderately drought tolerant",
+        "critical_stages": "Flowering and pod formation - water stress here causes flower drop and poor pod set"
+      },
+      "common_pests_diseases": [
+        { "name": "Pod borer (Maruca)", "sign": "Holes in flowers and pods", "remedy": "Spray neem extract at flowering, avoid planting near old cowpea fields" },
+        { "name": "Aphids", "sign": "Clusters on young shoots, sticky residue on leaves", "remedy": "Wash off with water, encourage ladybird beetles which prey on aphids" },
+        { "name": "Bacterial blight", "sign": "Water-soaked spots on leaves turning brown", "remedy": "Use clean seed, avoid working in fields when leaves are wet" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "60-90 days depending on variety",
+        "signs_of_readiness": "Pods turn yellow/brown and dry, rattle when shaken",
+        "harvest_method": "Hand-pick dry pods in stages as they mature, sun-dry further before threshing by beating"
+      },
+      "beginner_tips": [
+        "Great crop to rotate with cereals - it restores soil fertility for the next maize or sorghum crop",
+        "Harvest pods promptly once dry, leaving them too long in the field invites pod-sucking insects and weather damage",
+        "Avoid too much nitrogen fertilizer - cowpea makes its own through root nodules with soil bacteria"
+      ]
+    },
+    {
+      "id": "groundnut",
+      "name": "Groundnut (Peanut)",
+      "category": "legume",
+      "icon": "🥜",
+      "planting_zones": {
+        "forest": { "months": ["April", "May"], "notes": "Plant at start of rains" },
+        "savanna": { "months": ["May", "June"], "notes": "Major crop in savanna zones, plant with onset of consistent rains" },
+        "sahel": { "months": ["June", "July"], "notes": "Drought-tolerant varieties available for shorter rain windows" }
+      },
+      "soil": {
+        "type": "Light, sandy-loam soils - heavy clay makes pod and harvesting difficult",
+        "ph_range": "5.5 - 6.5",
+        "testing_tip": "Squeeze dry soil in your hand - if it crumbles easily and doesn't form hard clumps, it's suitable. Pods need to push into loose soil easily."
+      },
+      "spacing": {
+        "row_spacing_cm": 50,
+        "plant_spacing_cm": 15,
+        "planting_depth_cm": 5,
+        "seeds_per_hole": 1
+      },
+      "fertilizer": {
+        "basal": "Phosphorus-rich fertilizer (like SSP) at planting helps root and nodule development, around 50kg per hectare",
+        "topdress": "Generally not needed - too much nitrogen reduces pod yield",
+        "organic_alternative": "Wood ash applied to soil provides potassium and calcium which groundnut needs for good pod filling"
+      },
+      "watering": {
+        "frequency": "Rain-fed, moderate drought tolerance",
+        "critical_stages": "Flowering and pegging (when pods form and push into soil) - this is the most sensitive period to drought"
+      },
+      "common_pests_diseases": [
+        { "name": "Groundnut rosette virus", "sign": "Yellowing and stunting, spread by aphids", "remedy": "Plant early/with the first rains, control aphid vectors, use resistant varieties" },
+        { "name": "Leaf spot diseases", "sign": "Brown or dark spots on leaves leading to defoliation", "remedy": "Crop rotation, avoid continuous groundnut on same plot" },
+        { "name": "Termites", "sign": "Damaged pods and roots", "remedy": "Avoid planting on old termite-infested land, remove crop residue that attracts termites" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "90-120 days depending on variety",
+        "signs_of_readiness": "Leaves yellow, pods have developed visible veining and the inside of the shell darkens",
+        "harvest_method": "Loosen soil with a hoe or fork and pull up the whole plant, pods come up attached to roots, then dry and pick off"
+      },
+      "beginner_tips": [
+        "Don't plant in heavy clay - pods struggle to develop and harvesting becomes very labor intensive",
+        "Like cowpea, groundnut fixes nitrogen and is excellent for soil improvement before a cereal crop",
+        "Dry harvested pods thoroughly before storage to prevent aflatoxin (a dangerous mold) - never store damp groundnuts"
+      ]
+    },
+    {
+      "id": "soybean",
+      "name": "Soybean",
+      "category": "legume",
+      "icon": "🫘",
+      "planting_zones": {
+        "forest": { "months": ["May", "June"], "notes": "Needs reliable rainfall through the growing period" },
+        "savanna": { "months": ["June", "July"], "notes": "Widely grown commercial crop in middle belt areas" }
+      },
+      "soil": {
+        "type": "Well-drained loamy soils with good organic matter",
+        "ph_range": "6.0 - 6.8",
+        "testing_tip": "Soybean is sensitive to very acidic soils - if your land grows poor cassava or has reddish, very acidic-looking soil, consider liming before planting soybean"
+      },
+      "spacing": {
+        "row_spacing_cm": 50,
+        "plant_spacing_cm": 5,
+        "planting_depth_cm": 3,
+        "seeds_per_hole": 1
+      },
+      "fertilizer": {
+        "basal": "Phosphorus fertilizer at planting (e.g. SSP 50kg/ha), inoculate seeds with Rhizobium bacteria if available for better nitrogen fixation",
+        "topdress": "Not usually needed for nitrogen",
+        "organic_alternative": "Apply lime to acidic soils a few weeks before planting if soil test shows low pH"
+      },
+      "watering": {
+        "frequency": "Rain-fed, needs more consistent moisture than cowpea or groundnut",
+        "critical_stages": "Flowering and pod-filling stages"
+      },
+      "common_pests_diseases": [
+        { "name": "Pod-sucking bugs", "sign": "Shriveled, discolored seeds inside pods", "remedy": "Spray at pod formation stage if infestation is heavy, harvest promptly" },
+        { "name": "Rust", "sign": "Small reddish-brown pustules on leaf undersides", "remedy": "Use resistant varieties, avoid dense planting that traps humidity" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "90-130 days depending on variety",
+        "signs_of_readiness": "Pods and leaves turn brown/yellow and most leaves drop",
+        "harvest_method": "Cut or pull whole plants, dry for several days, then thresh"
+      },
+      "beginner_tips": [
+        "If available, treating seed with Rhizobium inoculant before planting drastically improves nitrogen fixation and yield - ask at agricultural input shops",
+        "Avoid harvesting too late - pods that over-dry in the field shatter and you lose seed on the ground",
+        "Good rotation crop before maize since it leaves nitrogen-enriched soil behind"
+      ]
+    },
+    {
+      "id": "bambara_nut",
+      "name": "Bambara Groundnut",
+      "category": "legume",
+      "icon": "🥜",
+      "planting_zones": {
+        "savanna": { "months": ["June", "July"], "notes": "A resilient traditional crop, often grown on marginal land" },
+        "sahel": { "months": ["June", "July"], "notes": "One of the most drought-tolerant legumes, suitable for poor soils" }
+      },
+      "soil": {
+        "type": "Tolerates poor, sandy, and even slightly degraded soils better than most legumes",
+        "ph_range": "5.0 - 6.8",
+        "testing_tip": "If groundnut struggles on a particular plot, bambara nut is a good alternative as it's even more tolerant of poor conditions"
+      },
+      "spacing": {
+        "row_spacing_cm": 50,
+        "plant_spacing_cm": 25,
+        "planting_depth_cm": 5,
+        "seeds_per_hole": 1
+      },
+      "fertilizer": {
+        "basal": "Usually grown without fertilizer, light phosphorus application can help on very poor soils",
+        "topdress": "Not needed",
+        "organic_alternative": "None needed typically - this crop is valued for thriving without inputs"
+      },
+      "watering": {
+        "frequency": "Rain-fed; extremely drought tolerant, can survive prolonged dry spells",
+        "critical_stages": "Flowering and pegging, similar to groundnut, though it tolerates stress better"
+      },
+      "common_pests_diseases": [
+        { "name": "Termites", "sign": "Damage to roots and pods underground", "remedy": "Avoid termite-prone fields, remove old crop residue" },
+        { "name": "Leaf spot", "sign": "Small dark lesions on leaves", "remedy": "Generally minor, crop rotation helps prevent buildup" }
+      ],
+      "harvest_timeline": {
+        "days_to_maturity": "110-150 days, longer than groundnut",
+        "signs_of_readiness": "Leaves yellow and dry, pods firm underground",
+        "harvest_method": "Similar to groundnut - lift plants and pick pods from roots, then dry"
+      },
+      "beginner_tips": [
+        "Excellent choice if you have poor, sandy land that struggles to grow other crops",
+        "Highly nutritious and an important food security crop, good for household consumption",
+        "Like groundnut, dry pods thoroughly before storage to avoid mold"
+      ]
+    }
+  ]
+}
