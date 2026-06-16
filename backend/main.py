@@ -14,6 +14,11 @@ import bcrypt
 import jwt
 import time
 import os
+import json
+
+files = os.listdir('datasets')
+all_crops = []
+
 
 app = FastAPI()
 API_SECRET_KEY = ""
@@ -145,3 +150,25 @@ def get_current_user(authorization: str = Header(...), db: Session = Depends(get
         return user
     else:
         raise HTTPException(status_code=401, detail="User not found")
+
+
+## Calender section
+def sort_dataset ():
+    for file in files:
+        if file.endswith('.json'):
+            with open (f"datasets/{file}", "r", encoding="utf-8") as f:
+                data = json.load(f)
+                all_crops.extend(data["crops"])
+    
+
+@app.get("/get_crop")
+async def get_crop (month: str = Query(..., description="Month to filter crops by")):
+    crops = []
+    if not all_crops:
+        sort_dataset()
+    for crop in all_crops:
+        if any (month in zone_data.get('months', []) for zone_data in crop['planting_zones'].values()):
+                crops.append(crop)
+    return crops
+
+
