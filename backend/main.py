@@ -16,7 +16,8 @@ import time
 import os
 import json
 
-files = os.listdir('datasets')
+DATASET_DIR = os.path.join(BASE_DIR, "datasets")
+files = os.listdir(DATASET_DIR)
 all_crops = []
 
 
@@ -156,7 +157,7 @@ def get_current_user(authorization: str = Header(...), db: Session = Depends(get
 def sort_dataset ():
     for file in files:
         if file.endswith('.json'):
-            with open (f"datasets/{file}", "r", encoding="utf-8") as f:
+            with open (os.path.join(DATASET_DIR, file),  "r", encoding="utf-8") as f:
                 data = json.load(f)
                 all_crops.extend(data["crops"])
     
